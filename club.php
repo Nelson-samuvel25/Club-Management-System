@@ -1,5 +1,4 @@
 <?php
-  require 'db.php';
   $query = "SELECT * from clubDetails";
   $clubDetails = mysqli_query($connection, $query);
 ?>
@@ -16,8 +15,8 @@
                     <img src="<?php echo $row['clubImage'];?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $row['clubName'];?></h5>
-                        <p class="card-text"><?php print_r(substr($row['clubDesciption'], 0 , 150));?>...</p>
-                        <a href="clubs/club2.html" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"><?php print_r(substr($row['clubDescription'], 0 , 150));?>...</p>
+                        <a href="clubDetails?id=<?php echo $row['id'];?>" class="btn btn-primary">Club Details</a>
                     </div>
                 </div>
             </div>

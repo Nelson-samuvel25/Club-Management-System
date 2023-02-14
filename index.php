@@ -1,4 +1,5 @@
 <?php
+    require 'db/db.php';
     $pageName = str_replace(array("/index.php/", "/index.php","index"), "", "$_SERVER[PHP_SELF]");
     $pageName = $pageName ?: "home";
     $title = ucfirst(preg_replace('/(?<=\w)(?=[A-Z])/',' ',$pageName));
@@ -23,7 +24,7 @@
     // A $( document ).ready() block.
 $( document ).ready(function() {
     document.title = "<?php echo $title;?>";
-    $("#<?php echo $pageName;?>").addClass("active");
+    $(".<?php echo $pageName;?>").addClass("active");
 });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

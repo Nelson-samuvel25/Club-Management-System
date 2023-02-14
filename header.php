@@ -9,16 +9,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" id="home" aria-current="page" href="home">Home</a>
+                        <a class="nav-link home" aria-current="page" href="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="about" href="about">About-Us</a>
+                        <a class="nav-link about" href="about">About-Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="club" href="club">Clubs</a>
+                        <a class="nav-link club clubDetails" href="club">Clubs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contact" href="contact">Contact</a>
+                        <a class="nav-link contact"href="contact">Contact</a>
                     </li>
                 </ul>
 

@@ -1,17 +1,4 @@
 <?php
-require 'db.php';
-
-// code for creating table for clubDetails
-// $createTable = "CREATE TABLE IF NOT EXISTS clubDetails (id INT PRIMARY KEY,clubName VARCHAR(255), clubDesciption text, file text);";
-
-// if(!(mysqli_query($connection, $createTable))){
-    //     echo "Table not created";
-    //     return;
-    // }else{
-        //     echo "clubDetails Table Created Successfully";
-        // }
-        
-
 if(isset($_POST['clubName'])){
    
    
