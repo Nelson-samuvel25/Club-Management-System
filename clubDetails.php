@@ -1,7 +1,7 @@
 <?php
   $id = $_GET['id'];
   $query = "SELECT * from clubDetails where id= '$id'";
-  $clubDetails = mysqli_query($connection, $query);
+  $clubDetails = query($query);
   if ($clubDetails->num_rows > 0) {
     // output data of each row
     while($row = $clubDetails->fetch_assoc()) {
@@ -24,7 +24,7 @@
           </div>
           <div class="col-lg-3">
             <img src="<?php echo $row['clubImage'];?>" alt="club image" class="img-fluid rounded">
-            <a href="" class="btn btn-primary mt-4 w-100">Join Now</a>
+            <a href="clubRegistration?id=<?php echo $row['id']?>" class="btn btn-primary mt-4 w-100">Join Now</a>
           </div>
 
         

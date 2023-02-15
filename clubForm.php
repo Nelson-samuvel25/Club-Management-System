@@ -28,9 +28,7 @@ if(isset($_POST['submit'])){
 	}
 
     $query = "INSERT INTO clubDetails(clubName, clubDescription, clubImage) VALUES ('$clubName', '$clubDescription', '$image_path')";
-    if(!(mysqli_query($connection, $query))){
-      echo "data not inserted";
-    }
+    query($query);
 
 }
 ?>

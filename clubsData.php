@@ -33,9 +33,7 @@ print_r($_POST['clubImage']);
 
     $query = "INSERT INTO clubDetails (clubName, clubDesciption, clubImage) VALUES ('$clubName', '$clubDescription', '$image_path')";
 
-    if(!(mysqli_query($connection, $query))){
-        echo "Data not inserted successfully";
-    }
+    query($query);
 
 }
 ?>

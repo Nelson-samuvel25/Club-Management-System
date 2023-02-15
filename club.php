@@ -1,6 +1,6 @@
 <?php
   $query = "SELECT * from clubDetails";
-  $clubDetails = mysqli_query($connection, $query);
+  $clubDetails = query($query);
 ?>
     <div class="container mt-4 mb-4">
         <h1>Clubs</h1>
