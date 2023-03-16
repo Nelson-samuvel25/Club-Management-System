@@ -9,14 +9,15 @@
       <div class="container mt-4 d-flex justify-content-center">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../clubs.html">Home-Clubs</a></li>
-            <li class="breadcrumb-item active" aria-current="page"> <a href="club1?id=<?php echo $row['id']?>"> <?php echo $row['clubName'];?></a></li>
+            <li class="breadcrumb-item"><a href="club">Home-Clubs</a></li>
+            <li class="breadcrumb-item active" aria-current="page"> <a href="clubDetails?id=<?php echo $row['id']?>"> <?php echo $row['clubName'];?></a></li>
           </ol>
         </nav>  
       </div>
       <div class="container">
        
         <div class="row">
+          <h1><?php echo $row['clubName'];?></h1>
           <div class="col-lg-9">
               <?php
                 print_r($row['clubDescription']);
