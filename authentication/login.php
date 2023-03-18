@@ -103,7 +103,7 @@
             <input type="submit"  value="Submit">
           </a>
         </form>
-        <p>Don't have an account? <a href="signup.html" class="a2">Sign up!</a></p>
+        <p>Don't have an account? <a href="signup" class="a2">Sign up!</a></p>
       </div>
     </div>
 

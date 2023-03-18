@@ -12,10 +12,11 @@
     $query = "INSERT INTO `clubRegistration` (`name`, `rollNumber`, `emailId`, `phoneNumber`, `department`, `year`, `club`, `position`, `gender`) VALUES ('$name', '$rollNumber', '$emailId', '$phoneNumber', '$department', '$year', '$clubName', '$position', '$gender');";
     query($query);
   }
+
   $clubId = $_GET['id'];
   $query =  "SELECT clubName from clubDetails where id='$clubId'";
   $clubDetails = query($query);
-  while($row = $clubDetails->fetch_assoc()) {
+  if($row = $clubDetails->fetch_assoc()) {
 ?>
     <div class="container mt-4">
         <div class="title">Registration</div>
@@ -38,6 +39,21 @@
                 <span class="details">Phone Number</span>
                 <input type="text" name="phoneNumber" placeholder="Enter your number" required>
               </div>
+              
+              <div class="input-box">
+                <span class="details">Department</span>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="department">
+                <option selected hidden>Department</option>
+                <option value="CSE">CSE</option>
+                <option value="II">IT</option>
+                <option value="III">III</option>
+                <option value="IV">IV</option>
+                <option value="V">V</option>
+              </select>
+              </div>
+              
+              
+              
               <div class="input-box">
                 <span class="details">Department</span>
                 <input type="text" name="department" placeholder="Department Name" required>

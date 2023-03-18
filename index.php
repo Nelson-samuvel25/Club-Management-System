@@ -1,6 +1,6 @@
 <?php
     session_start();
-    error_reporting(0);
+    // error_reporting(0);
     require 'db/db.php';
     $pageName = str_replace(array("/index.php/", "/index.php","index"), "", "$_SERVER[PHP_SELF]");
     $pageName = $pageName ?: "home";
